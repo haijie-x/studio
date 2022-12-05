@@ -1,1 +1,3 @@
-<p style="text-align:center;font-size:30px;font-weight:600;">type-challenge</p>
+<p align="center">
+  <strong>typescript challenge</strong>
+</p>
