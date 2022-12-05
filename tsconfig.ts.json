@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "es2021",
+    "module": "esnext",
+    "lib": [
+      "es2019",
+      "DOM"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "typescript"
+  ]
+}
