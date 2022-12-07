@@ -1,10 +1,13 @@
 {
-  "extends": "@antfu",
+  "extends": [
+    "@antfu",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "no-console": 1,
-    "prefer-regex-literals":0,
-    "import/first":0,
-    "@typescript-eslint/no-unused-vars":0,
-    "@typescript-eslint/ban-ts-comment":0
+    "prefer-regex-literals": 0,
+    "import/first": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/ban-ts-comment": 0
   }
 }
