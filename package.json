@@ -29,6 +29,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.33.1",
+    "chalk": "^5.2.0",
+    "consola": "^2.15.3",
     "eslint": "^8.29.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.0",
