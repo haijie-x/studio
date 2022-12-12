@@ -2,3 +2,4 @@ packages:
   - typescript
   - koa
   - egg
+  - react
