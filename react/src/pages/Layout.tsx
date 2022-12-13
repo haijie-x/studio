@@ -1,10 +1,11 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { Code } from '@/components/Code'
+import { CodePreview } from '@/components/CodePreview'
 import { Article } from '@/components/Article'
 export interface ILayoutProps {}
 
 const Wrapper = styled.div`
+  flex:1;
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -18,7 +19,7 @@ export function Layout(props: ILayoutProps) {
   }
   return (
     <Wrapper>
-      <Code curIdx={curIdx}></Code>
+      <CodePreview curIdx={curIdx}></CodePreview>
       <Article onUpdateCurIdx={updateCurIdx}></Article>
     </Wrapper>
   )
