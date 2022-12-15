@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 export interface IFadeProps {
   show: boolean
-  children: any
 }
 
 const Wrapper = styled.div`
@@ -14,7 +13,7 @@ const Wrapper = styled.div`
   padding: 0px 30px;
 `
 
-export function Fade(props: IFadeProps) {
+export function Fade(props: React.PropsWithChildren<IFadeProps>) {
   const [shouldRender, setRender] = React.useState(props.show)
 
   React.useEffect(() => {

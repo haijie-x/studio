@@ -14,13 +14,14 @@ const Wrapper = styled.div`
 export function Layout(props: ILayoutProps) {
   const [curIdx, setCurIdx] = React.useState(0)
 
-  const updateCurIdx = (idx: number) => {
+  const updateCurIdx = React.useCallback((idx: number) => {
     setCurIdx(idx)
-  }
+  }, [])
+
   return (
     <Wrapper>
-      <CodePreview curIdx={curIdx}></CodePreview>
-      <Article onUpdateCurIdx={updateCurIdx}></Article>
+      <CodePreview curIdx={curIdx} />
+      <Article onUpdateCurIdx={updateCurIdx} />
     </Wrapper>
   )
 }
