@@ -1,37 +1,42 @@
-import * as React from 'react'
-import styled from 'styled-components'
+// --------------   Replaced by react-transition-group   --------------
 
-export interface IFadeProps {
-  show: boolean
-}
+// import * as React from 'react'
+// import styled from 'styled-components'
 
-const Wrapper = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 30px;
-`
+// export interface IFadeProps {
+//   show: boolean
+//   animating: React.LegacyRef<HTMLDivElement>
+// }
 
-export function Fade(props: React.PropsWithChildren<IFadeProps>) {
-  const [shouldRender, setRender] = React.useState(props.show)
+// const Wrapper = styled.div`
+//   flex: 1;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 0px 30px;
+// `
 
-  React.useEffect(() => {
-    if (props.show) setRender(true)
-  }, [props.show])
+// export function Fade(props: React.PropsWithChildren<IFadeProps>) {
+//   const [shouldRender, setRender] = React.useState(props.show)
 
-  const onAnimationEnd = () => {
-    if (!props.show) setRender(false)
-  }
+//   React.useEffect(() => {
+//     if (props.show) setRender(true)
+//   }, [props.show])
 
-  return shouldRender ? (
-    <Wrapper
-      className={`animate__animated ${props.show ? 'animate__backInDown' : 'animate__backOutUp '} `}
-      onAnimationEnd={onAnimationEnd}
-    >
-      {props.children}
-    </Wrapper>
-  ) : (
-    <span></span>
-  )
-}
+//   const onAnimationEnd = () => {
+//     if (!props.show) setRender(false)
+//   }
+
+//   return shouldRender ? (
+//     <Wrapper
+//       className={`animate__animated ${props.show ? 'animate__backInDown' : 'animate__backOutUp '} `}
+//       onAnimationEnd={onAnimationEnd}
+//     >
+//       {props.children}
+//     </Wrapper>
+//   ) : (
+//     <></>
+//   )
+// }
+
+export {}

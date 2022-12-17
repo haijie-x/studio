@@ -1,0 +1,24 @@
+.code-enter,
+.code-appear {
+  opacity: 0;
+  transform: translateX(-1200px) scale(0.7);
+}
+.code-enter-active,
+.code-appear-active {
+  opacity: 1;
+  transform: translateX(0px) scale(1);
+}
+.code-exit {
+  opacity: 1;
+  transform: translateX(0px) scale(1);
+}
+.code-exit-active {
+  opacity: 0;
+  transform: translateX(-1200px) scale(0.7);
+}
+
+.code-appear-active,
+.code-enter-active,
+.code-exit-active {
+  transition: opacity 200ms, transform 200ms;
+}
