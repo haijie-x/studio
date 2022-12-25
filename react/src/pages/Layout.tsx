@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { CodePreview } from '@/components/CodePreview'
-import { Article } from '@/components/Article'
+import { CodePreview } from '@/components/Article/CodePreview'
+import { Article } from '@/components/Article/Article'
 export interface ILayoutProps {}
 
 const Wrapper = styled.div`
